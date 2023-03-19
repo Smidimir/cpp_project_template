@@ -10,8 +10,6 @@ class ConanApp(ConanFile):
 
     settings = "os", "compiler", "build_type", "arch"
 
-    requires = "libcurl/7.88.1"
-
     def generate(self):
         cmake = CMakeToolchain(self)
         cmake.user_presets_path = False
