@@ -3,3 +3,4 @@ app_name:
 
 _exclude:
   - .git
+  - copier.yml
