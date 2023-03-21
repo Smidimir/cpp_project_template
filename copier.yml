@@ -1,0 +1,5 @@
+app_name:
+  type: str
+
+_exclude:
+  - .git

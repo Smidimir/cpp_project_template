@@ -4,7 +4,7 @@ from conan.tools.cmake import CMakeToolchain, CMakeDeps, CMake
 # ref: https://docs.conan.io/2/reference/conanfile.html
 
 class ConanApp(ConanFile):
-    name = "conan_app"
+    name = "{{app_name}}"
     version = "0.1"
     package_type = "application"
 
