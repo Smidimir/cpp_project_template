@@ -18,24 +18,17 @@ source_group(TREE ${SOURCE_GROUP_TREE_ROOT} PREFIX ${APP_NAME} FILES ${SOURCE_GR
 # Configre platform
 add_subdirectory(platform)
 
+# Add libs
+add_subdirectory(libs)
+
 # Configure target
 target_link_libraries(${APP_NAME} PRIVATE
     ${APP_NAME}_src
-    ${APP_NAME}_platform)
+    ${APP_NAME}_platform
+    ${APP_NAME}_libs)
 
 # Configure compiler
 target_compile_features(${APP_NAME}
     PRIVATE
         cxx_std_20)
 
-# Configure libraries
-
-find_package(GLEW REQUIRED)
-find_package(GLUT REQUIRED)
-find_package(glm REQUIRED)
-
-target_link_libraries(${APP_NAME} PRIVATE
-    GLEW::GLEW
-    GLUT::GLUT
-    glm::glm
-)
