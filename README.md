@@ -52,7 +52,7 @@ The structure of the project reflects my view on how a modern c++ project should
 
  - [copier](https://copier.readthedocs.io/en/stable/) - a tool to create a specific project from this template;
  - [conan](https://conan.io/) - package manager for easy addition and use of third-party libraries;
- - [cmake](https://cmake.org/) - tool to configre your c++ project.
+ - [cmake](https://cmake.org/) - tool to configure your c++ project.
 
 
 ## Usage
