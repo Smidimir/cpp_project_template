@@ -1,4 +1,4 @@
-include(config)
+include(all)
 
 set(CUR_TARGET ${APP_NAME}_compiler)
 

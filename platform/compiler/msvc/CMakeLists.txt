@@ -1,7 +1,0 @@
-include(config)
-
-set(CUR_TARGET ${APP_NAME}_msvc)
-
-add_library(${CUR_TARGET} INTERFACE)
-
-set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${APP_NAME})
