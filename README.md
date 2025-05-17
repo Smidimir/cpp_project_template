@@ -61,8 +61,8 @@ This is just an example of one of possible workflows.
 I'm still learning how to work with `conan` and this steps work for me for now.
 You can build project however you like.
 
-1. Clone this repu: `copier https://github.com/Smidimir/cpp_project_template.git my_project`
+1. Clone this repo: `copier https://github.com/Smidimir/cpp_project_template.git my_project`
 2. Create working director, for example `.build` or `.bin`
-3. From this directory run `conan install .. -if . -s build_type=Debug --build=missing` to generate a project with all dependacies.
-4. Run `conan build .. -if . -bf .` to build your first project. From this moment cmake will also generates its files in this folder.
+3. From this directory run `conan install .. -of . -s build_type=Debug --build=missing` to generate a project with all dependacies.
+4. Run `conan build .. -of .` to build your first project. From this moment cmake will also generates its files in this folder.
 5. Now `common`, `app` and `test` should be compiled.
